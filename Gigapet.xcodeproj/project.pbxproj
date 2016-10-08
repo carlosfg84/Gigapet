@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075EB2BB1D9CD0030069B13C /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075EB2BA1D9CD0030069B13C /* DragImg.swift */; };
+		075EB2BD1D9CD5110069B13C /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075EB2BC1D9CD5110069B13C /* MonsterImg.swift */; };
 		07754C241D9A168400A9BA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07754C231D9A168400A9BA87 /* AppDelegate.swift */; };
 		07754C261D9A168400A9BA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07754C251D9A168400A9BA87 /* ViewController.swift */; };
 		07754C291D9A168400A9BA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07754C271D9A168400A9BA87 /* Main.storyboard */; };
@@ -14,6 +16,11 @@
 		07754C2E1D9A168400A9BA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07754C2C1D9A168400A9BA87 /* LaunchScreen.storyboard */; };
 		07754C391D9A168500A9BA87 /* GigapetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07754C381D9A168500A9BA87 /* GigapetTests.swift */; };
 		07754C441D9A168500A9BA87 /* GigapetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07754C431D9A168500A9BA87 /* GigapetUITests.swift */; };
+		07754C561D9A175500A9BA87 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07754C511D9A175500A9BA87 /* bite.wav */; };
+		07754C571D9A175500A9BA87 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07754C521D9A175500A9BA87 /* cave-music.mp3 */; };
+		07754C581D9A175500A9BA87 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07754C531D9A175500A9BA87 /* death.wav */; };
+		07754C591D9A175500A9BA87 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07754C541D9A175500A9BA87 /* heart.wav */; };
+		07754C5A1D9A175500A9BA87 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07754C551D9A175500A9BA87 /* skull.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075EB2BA1D9CD0030069B13C /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		075EB2BC1D9CD5110069B13C /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 		07754C201D9A168400A9BA87 /* Gigapet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigapet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07754C231D9A168400A9BA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07754C251D9A168400A9BA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,11 @@
 		07754C3F1D9A168500A9BA87 /* GigapetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigapetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07754C431D9A168500A9BA87 /* GigapetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigapetUITests.swift; sourceTree = "<group>"; };
 		07754C451D9A168500A9BA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07754C511D9A175500A9BA87 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		07754C521D9A175500A9BA87 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		07754C531D9A175500A9BA87 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		07754C541D9A175500A9BA87 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		07754C551D9A175500A9BA87 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07754C171D9A168400A9BA87 = {
+		072092861DA378EF00DA1F03 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
 				07754C221D9A168400A9BA87 /* Gigapet */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		07754C171D9A168400A9BA87 = {
+			isa = PBXGroup;
+			children = (
+				072092861DA378EF00DA1F03 /* New Group */,
 				07754C371D9A168500A9BA87 /* GigapetTests */,
 				07754C421D9A168500A9BA87 /* GigapetUITests */,
 				07754C211D9A168400A9BA87 /* Products */,
@@ -97,12 +119,19 @@
 		07754C221D9A168400A9BA87 /* Gigapet */ = {
 			isa = PBXGroup;
 			children = (
+				07754C511D9A175500A9BA87 /* bite.wav */,
+				07754C521D9A175500A9BA87 /* cave-music.mp3 */,
+				07754C531D9A175500A9BA87 /* death.wav */,
+				07754C541D9A175500A9BA87 /* heart.wav */,
+				07754C551D9A175500A9BA87 /* skull.wav */,
 				07754C231D9A168400A9BA87 /* AppDelegate.swift */,
 				07754C251D9A168400A9BA87 /* ViewController.swift */,
 				07754C271D9A168400A9BA87 /* Main.storyboard */,
 				07754C2A1D9A168400A9BA87 /* Assets.xcassets */,
 				07754C2C1D9A168400A9BA87 /* LaunchScreen.storyboard */,
 				07754C2F1D9A168400A9BA87 /* Info.plist */,
+				075EB2BA1D9CD0030069B13C /* DragImg.swift */,
+				075EB2BC1D9CD5110069B13C /* MonsterImg.swift */,
 			);
 			path = Gigapet;
 			sourceTree = "<group>";
@@ -229,6 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07754C5A1D9A175500A9BA87 /* skull.wav in Resources */,
+				07754C561D9A175500A9BA87 /* bite.wav in Resources */,
+				07754C581D9A175500A9BA87 /* death.wav in Resources */,
+				07754C591D9A175500A9BA87 /* heart.wav in Resources */,
+				07754C571D9A175500A9BA87 /* cave-music.mp3 in Resources */,
 				07754C2E1D9A168400A9BA87 /* LaunchScreen.storyboard in Resources */,
 				07754C2B1D9A168400A9BA87 /* Assets.xcassets in Resources */,
 				07754C291D9A168400A9BA87 /* Main.storyboard in Resources */,
@@ -256,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075EB2BD1D9CD5110069B13C /* MonsterImg.swift in Sources */,
+				075EB2BB1D9CD0030069B13C /* DragImg.swift in Sources */,
 				07754C261D9A168400A9BA87 /* ViewController.swift in Sources */,
 				07754C241D9A168400A9BA87 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +520,7 @@
 				07754C4A1D9A168500A9BA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07754C4B1D9A168500A9BA87 /* Build configuration list for PBXNativeTarget "GigapetTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +529,7 @@
 				07754C4D1D9A168500A9BA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07754C4E1D9A168500A9BA87 /* Build configuration list for PBXNativeTarget "GigapetUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +538,7 @@
 				07754C501D9A168500A9BA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
