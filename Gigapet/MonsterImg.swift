@@ -20,7 +20,7 @@ class MonsterImg: UIImageView {
         playIdleAnimation()
     }
     
-    func playIdleAnimation() {
+    func playIdleAnimation() -> Bool {
         
         self.image = UIImage(named: "idle1.png")
         
@@ -36,9 +36,11 @@ class MonsterImg: UIImageView {
         self.animationDuration = 0.8
         self.animationRepeatCount = 0
         self.startAnimating()
+        
+        return true
     }
     
-    func playDeathAnimation() {
+    func playDeathAnimation() -> Bool {
         
         self.image = UIImage(named: "dead5.png")
         
@@ -54,5 +56,7 @@ class MonsterImg: UIImageView {
         self.animationDuration = 0.8
         self.animationRepeatCount = 1
         self.startAnimating()
+        
+        return true
     }
 }

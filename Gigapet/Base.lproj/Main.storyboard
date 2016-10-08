@@ -110,6 +110,28 @@
                                     <constraint firstAttribute="height" constant="546" id="Yr7-kj-dXt"/>
                                 </constraints>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BJ-zP-6hL">
+                                <rect key="frame" x="210" y="210" width="183" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="jZ4-jA-rHy"/>
+                                    <constraint firstAttribute="height" constant="80" id="qtx-EX-4iZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="RedRoundedButton"/>
+                                <connections>
+                                    <action selector="restartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzo-JE-RK3"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RESTART GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ni1-oz-c7N">
+                                <rect key="frame" x="236" y="243" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Fk1-Uw-pVC"/>
+                                    <constraint firstAttribute="height" constant="21" id="sks-zV-rDk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -131,9 +153,12 @@
                             <constraint firstItem="DIU-7J-Pww" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-10" id="WOZ-Ib-A8q"/>
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XQr-cI-ztp"/>
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="YVi-4g-6cX"/>
+                            <constraint firstItem="8BJ-zP-6hL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YVs-eX-VVG"/>
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="Ygy-nD-pZc"/>
                             <constraint firstAttribute="trailing" secondItem="tOY-7Z-kqr" secondAttribute="trailing" constant="48" id="eGp-Ih-jnQ"/>
+                            <constraint firstItem="Ni1-oz-c7N" firstAttribute="centerX" secondItem="8BJ-zP-6hL" secondAttribute="centerX" id="i4w-e1-dsS"/>
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="top" secondItem="dLb-T7-1Ix" secondAttribute="bottom" constant="25" id="qUK-UT-QC3"/>
+                            <constraint firstItem="Ni1-oz-c7N" firstAttribute="centerY" secondItem="8BJ-zP-6hL" secondAttribute="centerY" id="qdu-Yh-ymR"/>
                             <constraint firstItem="6uT-7s-Tgx" firstAttribute="centerX" secondItem="dLb-T7-1Ix" secondAttribute="centerX" id="sux-9S-dci"/>
                             <constraint firstAttribute="trailing" secondItem="6L3-aP-4up" secondAttribute="trailing" id="tOz-2r-xu9"/>
                             <constraint firstItem="6uT-7s-Tgx" firstAttribute="centerY" secondItem="dLb-T7-1Ix" secondAttribute="centerY" id="tgw-5x-3EL"/>
@@ -141,6 +166,7 @@
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wmV-Qh-HMS"/>
                             <constraint firstItem="tOY-7Z-kqr" firstAttribute="top" secondItem="dLb-T7-1Ix" secondAttribute="bottom" constant="25" id="wnB-lh-IKu"/>
                             <constraint firstItem="dLb-T7-1Ix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wtB-Nx-9T3"/>
+                            <constraint firstItem="8BJ-zP-6hL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yC1-QY-ueq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -185,6 +211,8 @@
                         <outlet property="penalty1" destination="WJ1-we-2tK" id="DCn-Ky-hj3"/>
                         <outlet property="penalty2" destination="qSo-Qi-ZmZ" id="ozf-z6-itt"/>
                         <outlet property="penalty3" destination="vEW-da-mtR" id="r0B-cn-ifs"/>
+                        <outlet property="restartBtn" destination="8BJ-zP-6hL" id="G2J-j6-GxP"/>
+                        <outlet property="restartLbl" destination="Ni1-oz-c7N" id="tQv-AJ-nnt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,6 +221,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RedRoundedButton" width="2400" height="1326"/>
         <image name="bg" width="768" height="1024"/>
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>

@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1: UIImageView!
     @IBOutlet weak var penalty2: UIImageView!
     @IBOutlet weak var penalty3: UIImageView!
+    @IBOutlet weak var restartBtn: UIButton!
+    @IBOutlet weak var restartLbl: UILabel!
     
     var musicPlayer: AVAudioPlayer!
     var sfxBite: AVAudioPlayer!
@@ -37,13 +39,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        penalty1.alpha = DIM_ALPHA
-        penalty2.alpha = DIM_ALPHA
-        penalty3.alpha = DIM_ALPHA
-        
-        foodImg.dropTarget = monsterImg
-        heartImg.dropTarget = monsterImg
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.itemDropped(_:)), name: "onTargetDropped", object: nil)
         
         do {
@@ -58,7 +53,7 @@ class ViewController: UIViewController {
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
             
             musicPlayer.prepareToPlay()
-            musicPlayer.play()
+            
             
             sfxBite.prepareToPlay()
             sfxHeart.prepareToPlay()
@@ -69,14 +64,40 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
+        beginGame()
+    }
+    
+    func beginGame() {
+        
+        musicPlayer.play()
+        penalties = 0
+        
+        penalty1.alpha = DIM_ALPHA
+        penalty2.alpha = DIM_ALPHA
+        penalty3.alpha = DIM_ALPHA
+        
+        foodImg.dropTarget = monsterImg
+        heartImg.dropTarget = monsterImg
+        
         foodImg.alpha = DIM_ALPHA
         foodImg.userInteractionEnabled = false
         heartImg.alpha = OPAQUE
         heartImg.userInteractionEnabled = true
         
-        startTimer()
+        if monsterImg.playDeathAnimation() {
+            monsterImg.playIdleAnimation()
+        }
         
+        startTimer()
     }
+    
+    @IBAction func restartBtn(sender: AnyObject) {
+        beginGame()
+        restartBtn.hidden = true
+        restartLbl.hidden = true
+    }
+    
+    
     
     func startTimer() {
         if timer != nil {
@@ -152,6 +173,8 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImg.alpha = DIM_ALPHA
         heartImg.userInteractionEnabled = false
+        restartBtn.hidden = false
+        restartLbl.hidden = false
     }
 }
 
